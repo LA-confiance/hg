@@ -11,19 +11,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
+
 <body>
-    <div class="navbar" id="navbar">
-        <a class="bonjour" href="#" id="id">أرضنا و تراثنا</a> &nbsp;
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="bonjour" href="#" id="id">أرضنا و تراثنا</a>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="bonjour" href="#" class="active">
                 الصفحة الرئيسية
             </a>
-        <a class="bonjour" href="#">دروس المتاحة</a> &nbsp;&nbsp;
-        <a class="bonjour" href="https://eiconfianceschool.netlify.app/bejjar%20about.html">معلومات عن الطاقم</a>
-        <a class="bonjour" href="mailto:achrafchahin13@gmail.com">لتواصل معنا</a> &nbsp;&nbsp;
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+        <br> &nbsp;&nbsp;
+        <a class="bonjour" href="#">دروس المتاحة</a>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="bonjour" href="./bejjar about.html">معلومات عن الطاقم</a>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="bonjour" href="mailto:achrafchahin13@gmail.com">لتواصل معنا</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </a>
     </div>
+    <button class="openbtn" onclick="openNav()">القائمة الرئيسية ☰</button>
     <p class="text" style="text-align:center">
         الإجتماعيات
     </p>
@@ -191,7 +196,13 @@
                 mybutton.style.display = "none";
             }
         }
+  function openNav() {
+            document.getElementById("mySidepanel").style.width = "300px";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
         // When the user clicks on the button, scroll to the top of the document
         function topfunction() {
             document.body.scrollTop = 0; // For Safari
