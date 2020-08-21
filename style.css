@@ -25,14 +25,14 @@ img {
     background: linear-gradient(50deg, red, white);
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50%;
 }
 
 #navbar {
     padding: 20px;
     width: 100%;
-    background: linear-gradient(90deg, green, red);
+    background: linear-gradient(90deg, black, red);
     margin-bottom: 10px;
     left: 0;
     top: 0;
@@ -82,6 +82,63 @@ img {
     }
 }
 
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(90deg, black, red);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 1s;
+    text-align: center;
+    width: 100%;
+}
+
+.sidepanel a:hover {
+    color: black;
+}
+
+.closebtn {
+    float: left;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
 .text {
     background: linear-gradient(50deg, rgb(6, 240, 6), red);
     font-size: 50px;
@@ -90,6 +147,7 @@ img {
 }
 
 .bonjour {
+    text-align: center;
     color: beige;
     text-decoration: beige;
     padding: 5px;
@@ -97,24 +155,16 @@ img {
     transition: 1s;
 }
 
-#id {
-    float: left;
-}
-
 .bonjour:hover {
     color: black;
     background-color: white;
     padding: 5px;
+    width: 100%;
 }
 
 .active {
     background-color: white;
     color: black;
-}
-
-.bonjour:hover {
-    box-shadow: 18px 8px 20px 0 grey;
-    border-radius: 20px;
 }
 
 
@@ -177,6 +227,7 @@ img {
 
 a {
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 button {
