@@ -135,7 +135,7 @@ body {
     border: none;
     width: 100%;
 }
-
+button #channel{width:100%;}
 .openbtn:hover {
     background-color: #444;
 }
