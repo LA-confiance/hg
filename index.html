@@ -13,22 +13,35 @@
 
 
 <body>
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a class="bonjour" href="#" id="id">أرضنا و تراثنا</a>
-        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="bonjour" href="#" class="active">
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Prof Badr Amaghrane</a>
+        <a href="#news">
                 الصفحة الرئيسية
+                <i class="fa fa-fw fa-home"></i>
             </a>
-        <br> &nbsp;&nbsp;
-        <a class="bonjour" href="#">دروس المتاحة</a>
-        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="bonjour" href="./bejjar about.html">معلومات عن الطاقم</a>
-        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="bonjour" href="mailto:achrafchahin13@gmail.com">لتواصل معنا</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                    دروس المتاحة
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="dropdown-content">
+                <a href="#">
+                        دروس
+                    </a>
+                <a href="#">الإمتحانات</a>
+                <a href="./jihawi.html">الإمتحانات الجهوية</a>
+            </div>
+        </div>
+        <a href="#about">
+                معلومات عن الطاقم
+                <i class="fas fa-info"></i>
+            </a>
+        <a href="#contact">
+                لتواصل معنا
+                <i class="fa fa-fw fa-envelope"></i>
+            </a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    <button class="openbtn" onclick="openNav()">القائمة الرئيسية ☰</button>
     <p class="text" style="text-align:center">
         الإجتماعيات
     </p>
@@ -213,6 +226,13 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
     </script>
 </body>
 
