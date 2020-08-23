@@ -351,7 +351,7 @@ a {
     transition: 1s;
 }
 
-button:hover {
+.ji:hover,#channel {
     background: linear-gradient(80deg, black, DodgerBlue);
     color: white;
 }
