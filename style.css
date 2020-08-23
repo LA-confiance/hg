@@ -339,8 +339,7 @@ a {
     text-decoration: none;
     margin-bottom: 10px;
 }
-
-button {
+.ji{
     background: linear-gradient(80deg, DodgerBlue, white);
     border: none;
     color: black;
