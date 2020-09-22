@@ -327,7 +327,7 @@ button #channel{width:100%;}
     text-align: center; 
     text-decoration: none;
     border-style:none;
-
+   padding:30px;
 }
 
 .card:hover {
