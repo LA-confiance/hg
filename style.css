@@ -328,6 +328,8 @@ button #channel{width:100%;}
     text-decoration: none;
     border-style:none;
    padding:30px;
+    background:linear-gradient(50deg,red,black);
+        color:white;
 }
 
 .card:hover {
