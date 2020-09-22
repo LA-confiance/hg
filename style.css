@@ -323,9 +323,11 @@ button #channel{width:100%;}
 #channel {
     display: flex;
     justify-content: center;
-    text-decoration: none;
     align-items: center;
-    text-align: center;
+    text-align: center; 
+    text-decoration: none;
+    border-style:none;
+
 }
 
 .card:hover {
