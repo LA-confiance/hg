@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+.nav-link{
+    color: white;
+}
+.card{
+    width: 100%;
+    height: 100%;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -19,11 +25,7 @@ html {
         text-decoration: none;
         font-size: 17px;
     }
-    
-    .active {
-        background-color: #4CAF50;
-        color: white;
-    }
+
     
     .topnav .icon {
         display: none;
@@ -355,4 +357,20 @@ a {
 .ji:hover,#channel {
     background: linear-gradient(80deg, black, DodgerBlue);
     color: white;
+}
+@media screen and (max-width:992px) {
+    .col-lg-4{
+        width: 100%;
+    }
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-toggler{
+    mix-blend-mode: screen;
+
+}
+.nav-link>.active{
+    color: white;
+
 }
